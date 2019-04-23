@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="webpage.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+    <style>
+       .menu a:hover{
+             background-color: grey; 
+             padding: 15px 0px 15px 1px; 
+             font-size: 20px; 
+        }
+        
+    </style>
+<body>
+    <form id="form1" runat="server">
+          <header>
+       
+       
+        <div style="background-color: #219087; margin-top: -19px; margin-left: -9px; margin-right: -8px;">
+            <h3 style="padding-top: 18px; color:white; padding-bottom: 12px; padding-left: 13px;">
+                Resumme Management System
+            </h3>
+            <div style="float: right; margin-right: 17px; margin-top: -67px;">
+                <ul>
+                    <li style="display: inline; color:white;">Hello User&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                    <li style="display: inline; color:white;"><a style="color: black; text-decoration: solid;" href="/Login">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+         <aside>
+        <div style="float:left; background-color: #35BAAF; width: 235px; height: 610px; margin-top: -18px; margin-left: -13px;">
+            <div class="menu" style="width: 235px; padding: 15px 0px 15px 1px; font-size: 20px;">
+                 
+
+                <a href="/Delete_Notify" style="text-decoration: none; color: white; padding-left: 49px;padding-right: 102px;"  >Delete_Notify</a>
+               
+                <br /> <br />
+               
+               <%-- <a href="" style="text-decoration: none; color: white; padding-left: 48px;padding-right: 107px;" onclick="Graph(); return false">Diagrams</a>--%>
+
+            </div>
+
+        </div>
+    </aside>
+
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
